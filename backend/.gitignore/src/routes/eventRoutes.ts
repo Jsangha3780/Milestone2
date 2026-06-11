@@ -27,9 +27,9 @@ router.delete("/:id", (req, res) => {
     res.json({ message: `Event ${req.params.id} deleted` });
 });
 
-/* PATCH interest */
-router.patch("/:id/interested", (req, res) => {
-    res.json({ message: `Interest increased for event ${req.params.id}` });
+/* UPDATE interest */
+router.put("/:id/interested", (req, res) => {
+    res.json({ message: `Interest updated for event ${req.params.id}` });
 });
 
 export default router;
