@@ -28,7 +28,7 @@ router.delete("/:id", (req, res) => {
 });
 
 /* UPDATE interest */
-router.put("/:id/interested", (req, res) => {
+router.patch("/:id/interested", (req, res) => {
     res.json({ message: `Interest updated for event ${req.params.id}` });
 });
 
